@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sales Dashboard</title>
+
+    <link rel="stylesheet" href="style_sales.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1> Sales Dashboard</h1>
+
+        <p>Business Sales Overview</p>
+
+
+        <!-- Dashboard Cards -->
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Total Sales</h3>
+                <p>₹<span id="totalSales">0</span></p>
+            </div>
+
+            <div class="card">
+                <h3>Total Orders</h3>
+                <p id="totalOrders">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Average Order</h3>
+                <p>₹<span id="averageOrder">0</span></p>
+            </div>
+
+            <div class="card">
+                <h3>Best Product</h3>
+                <p id="bestProduct">---</p>
+            </div>
+
+        </div>
+
+
+        <!-- Filter -->
+
+        <div class="filter">
+
+            <label>Filter by Category:</label>
+
+            <select id="categoryFilter" onchange="filterSales()">
+
+                <option value="All">All</option>
+
+                <option value="Electronics">
+                    Electronics
+                </option>
+
+                <option value="Clothing">
+                    Clothing
+                </option>
+
+                <option value="Food">
+                    Food
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- Sales Table -->
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Product</th>
+
+                    <th>Category</th>
+
+                    <th>Quantity</th>
+
+                    <th>Price</th>
+
+                    <th>Total</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="salesTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <script src="script_sales.js"></script>
+
+</body>
+
+</html>
