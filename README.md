@@ -2,6 +2,10 @@
 
 An interactive sales dashboard built using HTML, CSS, and JavaScript.
 
+## 🚀 Live Demo
+
+https://romitpatel4.github.io/sales-dashboard/
+
 ## 🚀 Features
 
 - Total sales calculation
